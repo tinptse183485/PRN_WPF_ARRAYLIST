@@ -1,0 +1,32 @@
+﻿<Window x:Class="CandidateManagement_PHAMTRUNGTIN_SE183485.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CandidateManagement_PHAMTRUNGTIN_SE183485"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="600" Width="1000" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush/>
+    </Window.Background>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="img/prn1.jpg"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="624,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="308" TextChanged="TextBox_TextChanged" Height="42" Text="admin@hr.com.vn" VerticalContentAlignment="Center" FontSize="20" Background="#FFD2F5F9" BorderBrush="#FF061B59"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="479,244,0,0" VerticalAlignment="Top" Height="43" FontSize="20" Width="92" Foreground="White"/>
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="624,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="308" TextChanged="TextBox_TextChanged" Height="43" Text="123@" VerticalContentAlignment="Center" FontSize="20" Background="#FFD2F5F9" BorderBrush="#FF061B59"/>
+        <Label Content="Email" HorizontalAlignment="Left" VerticalContentAlignment="Center" Margin="479,160,0,0" VerticalAlignment="Top" Height="43" FontSize="20" Width="92" Foreground="White" />
+        <Label Content="Login Screen" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="576,32,0,0" VerticalAlignment="Top" Height="71" FontSize="40" Width="269" FontWeight="Bold" Foreground="White"/>
+        <Button x:Name="BtnLogin" Content="Login" HorizontalAlignment="Left" Margin="576,337,0,0" VerticalAlignment="Top" Click="BtnLogin_Click" Height="48" Width="96" Background="#FF272B4E" FontSize="16" Foreground="#FFF6F4F9"/>
+        <Button x:Name="BtnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="876,337,0,0" VerticalAlignment="Top" Height="48" Width="98" Click="BtnCancel_Click" Background="#FF272B4E" FontSize="16" Foreground="#FFF6F4F9"/>
+        <Button x:Name="btnRegister" Content="Register" HorizontalAlignment="Left" Margin="730,337,0,0" VerticalAlignment="Top" Height="48" Width="96" RenderTransformOrigin="1.385,0.584" FontSize="16" Background="#FF272B4E" Click="btnRegister_Click" Foreground="#FFF6F4F9"/>
+
+    </Grid>
+</Window>

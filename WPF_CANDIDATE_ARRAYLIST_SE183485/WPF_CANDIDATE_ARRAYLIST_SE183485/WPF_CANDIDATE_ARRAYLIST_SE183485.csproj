@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="img\prn1.jpg" />
+    <None Remove="img\prn10.jpg" />
+    <None Remove="img\prn11.jpg" />
+    <None Remove="img\prn2.jpg" />
+    <None Remove="img\prn3.jpg" />
+    <None Remove="img\prn4.jpg" />
+    <None Remove="img\prn5.jpg" />
+    <None Remove="img\prn6.jpg" />
+    <None Remove="img\prn7.jpg" />
+    <None Remove="img\prn9.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Candidate_Service\Candidate_Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\prn1.jpg" />
+    <Resource Include="img\prn10.jpg" />
+    <Resource Include="img\prn11.jpg" />
+    <Resource Include="img\prn2.jpg" />
+    <Resource Include="img\prn3.jpg" />
+    <Resource Include="img\prn4.jpg" />
+    <Resource Include="img\prn5.jpg" />
+    <Resource Include="img\prn6.jpg" />
+    <Resource Include="img\prn7.jpg" />
+    <Resource Include="img\prn9.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Data\CandidateProFile.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\HRAccount.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\JobPosting.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

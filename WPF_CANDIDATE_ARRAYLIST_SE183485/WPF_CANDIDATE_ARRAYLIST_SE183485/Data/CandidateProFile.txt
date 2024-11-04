@@ -1,0 +1,7 @@
+﻿CandidateID	Fullname	Birthday	ProfileShortDescription	ProfileURL	PostingID
+CANDIDATE0001	Alan Clinton	1990-09-01 00:00:00.000	Excellent communication skills with a commitment to understanding customer requirements as well as business objectives.	AlanClinton.PDF	P0002
+CANDIDATE0002	Ethelbert Harron	1993-04-16 00:00:00.000	Critical thinking skills and an analytical mind with strong problem-solving abilitiess.	EthelbertHarron.PDF	P0002
+CANDIDATE0003	Kenneth Paul	1980-09-24 00:00:00.000	Highly experienced with various operating systems and databases	KennethPaul.PDF	P0002
+CANDIDATE0005	William Peter	1991-06-28 00:00:00.000	Problem solving skills to revise existing systems and suggest improvements.	WilliamPeter.PDF	P0005
+CANDIDATE0006	Edward David Clinton	1990-07-13 00:00:00.000	Patience and ability to train users in both new and existing IT systems.	EdwardDavidClinton.PDF	P0004
+CANDIDATE0008	Michael Leonard Handsome	2024-10-28 00:00:00.000	NULL	MichaelLeonard.PDF	P0005

@@ -1,0 +1,57 @@
+﻿<Window x:Class="CandidateManagement_PHAMTRUNGTIN_SE183485.HRAccountWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CandidateManagement_PHAMTRUNGTIN_SE183485"
+        mc:Ignorable="d"
+        Title="HRAccountWindow" Height="800" Width="1200" Loaded="Window_Loaded"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <RadialGradientBrush SpreadMethod="Repeat" MappingMode="RelativeToBoundingBox" GradientOrigin="0.3,0.5" Center="0.6,0.3">
+                <GradientStop Color="#FFD251CF" Offset="1"/>
+                <GradientStop Color="#FFD253CC"/>
+                <GradientStop Color="#FF4355C2" Offset="0.737"/>
+                <GradientStop Color="#FF9E23C0" Offset="0.402"/>
+                <GradientStop Color="#FF232D5F" Offset="0.556"/>
+                <GradientStop Color="#FF333E75" Offset="0.178"/>
+                <GradientStop Color="#FF040108" Offset="0.29"/>
+                <GradientStop Color="#FF351746" Offset="0.646"/>
+                <GradientStop Color="#FF5C2286" Offset="0.101"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <Image Margin="621,0,0,0" Width="578" Source="img/prn4.jpg" Stretch="UniformToFill" RenderTransformOrigin="0.493,0.519" Cursor="Arrow">
+            <Image.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFB95CB6"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Image.OpacityMask>
+        </Image>
+        <Label Content="HRACOUNT MANAGEMENT" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" FontSize="35" Background="#FF4130F9" FontFamily="Goudy Old Style" Foreground="#FFF7F7F7"/>
+        <Label Content="FullName:" HorizontalAlignment="Left" Margin="160,195,0,0" VerticalAlignment="Top" Foreground="#FFF3E5E5" FontSize="20" Background="#FF2A2AC9"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="651,105,0,0" VerticalAlignment="Top" Foreground="#FFF3F0F0" FontSize="20" Background="#FF2A2AC9"/>
+        <Label Content="Email:" HorizontalAlignment="Left" Margin="160,103,0,0" VerticalAlignment="Top" Foreground="#FFF6F6F6" FontSize="20" Background="#FF2A2AC9"/>
+        <Label Content="Role:" HorizontalAlignment="Left" Margin="651,203,0,0" VerticalAlignment="Top" Foreground="#FFF9F7F7" FontSize="20" Background="#FF2A2AC9"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="265,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" Height="33" RenderTransformOrigin="0.894,0.784" FontSize="20">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="txtFullName" HorizontalAlignment="Left" Margin="265,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" Height="33" FontSize="20"/>
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="753,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" Height="33" FontSize="20"/>
+        <ComboBox x:Name="cmbRole" HorizontalAlignment="Left" Margin="753,206,0,0" VerticalAlignment="Top" Width="166" FontSize="20" Height="31"/>
+        <DataGrid x:Name="DataGrid" d:ItemsSource="{d:SampleData ItemCount=4}" Margin="186,307,186,130" SelectionChanged="DataGrid_SelectionChanged" FontSize="16"/>
+        <Button x:Name="bntAdd" Content="Add" HorizontalAlignment="Left" Margin="120,691,0,0" VerticalAlignment="Top" Height="50" Width="113" Background="#FF447F93" Click="bntAdd_Click" FontSize="16" Foreground="#FFF1EBEB"/>
+        <Button x:Name="bntUpdate" Content="Update" HorizontalAlignment="Left" Margin="377,691,0,0" VerticalAlignment="Top" Height="50" Width="117" Background="#FF2174E5" Click="bntUpdate_Click" FontSize="16" Foreground="#FFF6F1F1"/>
+        <Button x:Name="bntDelete" Content="Delete" HorizontalAlignment="Left" Margin="651,691,0,0" VerticalAlignment="Top" Height="50" Width="115" Background="#FFCE6FFF" Click="bntDelete_Click" FontSize="16" Foreground="#FFF0EEEE"/>
+        <Button x:Name="bntClose" Content="Close" HorizontalAlignment="Left" Margin="923,691,0,0" VerticalAlignment="Top" Height="50" Width="117" Background="#FFFF62BD" Click="bntClose_Click" FontSize="16" Foreground="#FFEEE9E9"/>
+        <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Left" Margin="516,199,0,0" VerticalAlignment="Top" Height="33" Width="70" Click="btnSearch_Click" Background="#FFBC40F1" Foreground="White" FontSize="18"/>
+    </Grid>
+</Window>
